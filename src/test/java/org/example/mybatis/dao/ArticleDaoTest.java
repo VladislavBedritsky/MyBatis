@@ -68,4 +68,20 @@ public class ArticleDaoTest {
         System.out.println(article);
     }
 
+    @Test
+    @Transactional
+    public void whenUpdateArticle_shouldReturnThisArticle() {
+        this.newArticle.setId(1L);
+        articleDao.updateArticle(this.newArticle);
+
+        Article article = articleDao.findById(1L);
+
+        assertNotNull(article);
+        assertEquals(article.getId(), (Long) 1L);
+        assertEquals(article.getTitle(), this.newArticle.getTitle());
+        assertEquals(article.getAuthor(), this.newArticle.getAuthor());
+
+        System.out.println(article);
+    }
+
 }

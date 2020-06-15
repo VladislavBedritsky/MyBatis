@@ -16,8 +16,8 @@ public interface ArticleDao {
     @Insert("INSERT INTO articles VALUES (#{id}, #{title}, #{author})")
     void saveArticle(Article article);
 
-    @Update("UPDATE articles SET title = #{title}, author = #{author}")
-    void updateArticle(@Param("article") Article article);
+    @Update("UPDATE articles SET title = #{title}, author = #{author} WHERE id = #{id}")
+    void updateArticle(Article article);
 
     @Delete("DELETE FROM articles where id=#{id}")
     void deleteArticle(@Param("id") Long id);
