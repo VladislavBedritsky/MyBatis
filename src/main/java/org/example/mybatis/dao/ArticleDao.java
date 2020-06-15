@@ -13,10 +13,10 @@ public interface ArticleDao {
     @Select("SELECT * FROM articles")
     List<Article> findAll();
 
-    @Insert("INSERT INTO articles VALUES (#{article}.id, #{article}.title, #{article}.author)")
-    void saveArticle(@Param("article") Article article);
+    @Insert("INSERT INTO articles VALUES (#{id}, #{title}, #{author})")
+    void saveArticle(Article article);
 
-    @Update("UPDATE articles SET title = #{article}.title, author = #{article}.author")
+    @Update("UPDATE articles SET title = #{title}, author = #{author}")
     void updateArticle(@Param("article") Article article);
 
     @Delete("DELETE FROM articles where id=#{id}")

@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -50,4 +51,21 @@ public class ArticleDaoTest {
 
         System.out.println(articles);
     }
+
+
+    @Test
+    @Transactional
+    public void whenSaveArticle_shouldReturnThisArticle() {
+        articleDao.saveArticle(this.newArticle);
+
+        Article article = articleDao.findById(newArticle.getId());
+
+        assertNotNull(article);
+        assertEquals(this.newArticle.getId(), article.getId());
+        assertEquals(this.newArticle.getTitle(), article.getTitle());
+        assertEquals(this.newArticle.getAuthor(), article.getAuthor());
+
+        System.out.println(article);
+    }
+
 }

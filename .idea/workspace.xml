@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5a988c6-a94d-41b2-ae8a-ca9cfb53ef9d" name="Default Changelist" comment="" />
+    <list default="true" id="b5a988c6-a94d-41b2-ae8a-ca9cfb53ef9d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mybatis/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mybatis/dao/ArticleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/mybatis/dao/ArticleDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/mybatis/dao/ArticleDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/mybatis/dao/ArticleDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/mybatis/dao/ArticleDaoTest.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +23,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1dMFAlbaPC3KpoG6mH5o8UsU3kP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ENABLED_META" value="false" />
     <property name="META_SYNC_MODE" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
@@ -45,7 +56,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ArticleDaoTest.whenRecordsInDatabase_shouldReturnAllArticles">
+  <component name="RunManager" selected="JUnit.ArticleDaoTest">
+    <configuration name="ArticleDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.mybatis.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.mybatis.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mybatis.dao.ArticleDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArticleDaoTest.whenRecordsInDatabase_shouldReturnAllArticles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis" />
       <extension name="coverage">
@@ -78,9 +104,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ArticleDaoTest.whenSaveArticle_shouldReturnThisArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.mybatis.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.mybatis.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mybatis.dao.ArticleDaoTest" />
+      <option name="METHOD_NAME" value="whenSaveArticle_shouldReturnThisArticle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArticleDaoTest" />
         <item itemvalue="JUnit.ArticleDaoTest.whenRecordsInDatabase_shouldReturnAllArticles" />
+        <item itemvalue="JUnit.ArticleDaoTest.whenSaveArticle_shouldReturnThisArticle" />
         <item itemvalue="JUnit.ArticleDaoTest.whenRecordsInDatabase_shouldReturnArticleWithGsvenId" />
       </list>
     </recent_temporary>
@@ -100,5 +144,16 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
