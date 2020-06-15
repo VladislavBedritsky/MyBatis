@@ -84,4 +84,16 @@ public class ArticleDaoTest {
         System.out.println(article);
     }
 
+    @Test
+    @Transactional
+    public void whenDeleteArticle_shouldNotReturnThisArticle() {
+        articleDao.deleteArticle(1L);
+
+        Article article = articleDao.findById(1L);
+        List<Article> articles = articleDao.findAll();
+
+        assertNull(article);
+        assertEquals(articles.size(), 0);
+    }
+
 }

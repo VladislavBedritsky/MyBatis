@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5a988c6-a94d-41b2-ae8a-ca9cfb53ef9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mybatis/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mybatis/dao/ArticleDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/mybatis/dao/ArticleDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/mybatis/dao/ArticleDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mybatis/dao/ArticleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mybatis/dao/ArticleDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/mybatis/dao/ArticleDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/mybatis/dao/ArticleDaoTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ArticleDaoTest.whenUpdateArticle_shouldReturnThisArticle">
+  <component name="RunManager" selected="JUnit.ArticleDaoTest">
     <configuration name="ArticleDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis" />
       <extension name="coverage">
@@ -72,6 +68,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ArticleDaoTest.whenDeleteArticle_shouldNotReturnThisArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.mybatis.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.mybatis.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mybatis.dao.ArticleDaoTest" />
+      <option name="METHOD_NAME" value="whenDeleteArticle_shouldNotReturnThisArticle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArticleDaoTest.whenRecordsInDatabase_shouldReturnAllArticles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis" />
       <extension name="coverage">
@@ -83,22 +95,6 @@
       <option name="PACKAGE_NAME" value="org.example.mybatis.dao" />
       <option name="MAIN_CLASS_NAME" value="org.example.mybatis.dao.ArticleDaoTest" />
       <option name="METHOD_NAME" value="whenRecordsInDatabase_shouldReturnAllArticles" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArticleDaoTest.whenRecordsInDatabase_shouldReturnArticleWithGsvenId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.mybatis.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.mybatis.dao" />
-      <option name="MAIN_CLASS_NAME" value="org.example.mybatis.dao.ArticleDaoTest" />
-      <option name="METHOD_NAME" value="whenRecordsInDatabase_shouldReturnArticleWithGsvenId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArticleDaoTest.whenUpdateArticle_shouldReturnThisArticle" />
         <item itemvalue="JUnit.ArticleDaoTest" />
+        <item itemvalue="JUnit.ArticleDaoTest.whenDeleteArticle_shouldNotReturnThisArticle" />
+        <item itemvalue="JUnit.ArticleDaoTest.whenUpdateArticle_shouldReturnThisArticle" />
         <item itemvalue="JUnit.ArticleDaoTest.whenRecordsInDatabase_shouldReturnAllArticles" />
         <item itemvalue="JUnit.ArticleDaoTest.whenSaveArticle_shouldReturnThisArticle" />
-        <item itemvalue="JUnit.ArticleDaoTest.whenRecordsInDatabase_shouldReturnArticleWithGsvenId" />
       </list>
     </recent_temporary>
   </component>
